@@ -18,10 +18,10 @@ function Suggestions() {
             </span>
             <div className="userInfo flex flex-col">
               <span className="userName">kimmy</span>
-              <span className="userRelation text-gray-500 text-sm">New to Instagram</span>
+              <span className="userRelation text-gray-500 text-sm">New to Jamii Feed</span>
             </div>
           </div>
-            <button className="follow text-[#0095F7] font-bold bg-transparent border-0 hover:text-white cursor-pointer">Follow</button>
+            <button className="follow text-orange-700 font-bold bg-transparent border-0 hover:text-white cursor-pointer">Follow</button>
         </div>
 
         <div className="suggestions__userName flex justify-between mt-4">
@@ -31,10 +31,10 @@ function Suggestions() {
             </span>
             <div className="userInfo flex flex-col">
               <span className="userName">kimmy</span>
-              <span className="userRelation text-gray-500 text-sm">New to Instagram</span>
+              <span className="userRelation text-gray-500 text-sm">New to Jamii Feed</span>
             </div>
           </div>
-            <button className="follow text-[#0095F7] font-bold bg-transparent border-0 hover:text-white cursor-pointer">Follow</button>
+            <button className="follow text-orange-700 font-bold bg-transparent border-0 hover:text-white cursor-pointer">Follow</button>
         </div>
 
         <div className="suggestions__userName flex justify-between mt-4">
@@ -44,10 +44,10 @@ function Suggestions() {
             </span> 
             <div className="userInfo flex flex-col">
               <span className="userName font-semibold text-sm">kimmy</span>
-              <span className="userRelation text-gray-500 text-sm ">New to Instagram</span>
+              <span className="userRelation text-gray-500 text-sm ">New to Jamii Feed</span>
             </div>
           </div>
-            <button className="follow text-[#0095F7] font-bold bg-transparent border-0 hover:text-white cursor-pointer">Follow</button>
+            <button className="follow text-orange-700 font-bold bg-transparent border-0 hover:text-white cursor-pointer">Follow</button>
         </div>
       </div>
    

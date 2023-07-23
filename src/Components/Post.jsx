@@ -6,6 +6,7 @@ import {AiFillHeart, AiOutlineHeart} from 'react-icons/ai'
 import {PiShareFatThin} from 'react-icons/pi'
 import {BsBookmarks, BsBookmarksFill} from 'react-icons/bs'
 import {NavLink} from 'react-router-dom'
+import Comments from './Comments'
 
 function Post({likes, body, timestamp, user, postImage, profilePic, userId}) {
 
@@ -17,6 +18,7 @@ function Post({likes, body, timestamp, user, postImage, profilePic, userId}) {
   // icon color change temporary logic for like and bookmark
   const [like, setLiked] = useState(false)
   const [bookmark, setBookmark] = useState(false)
+  const [openComment, setCommentOpen] = useState(false)
 
   return (
     <div className='post w-[550px] mt-8 mx-10 mb-14 '>
@@ -43,11 +45,19 @@ function Post({likes, body, timestamp, user, postImage, profilePic, userId}) {
       <div className="post__footer">
         <div className="post__footerIcons flex justify-between mt-2 items-center hover:cursor-pointer text-2xl">
           <div className="post__footerIcons__main flex ">
+              {/* like */}
             <button onClick={()=>setLiked(!like)}>
-            {like ? <AiFillHeart className='mx-1'/> : <AiOutlineHeart className='mx-2'/>}
+              {like ? <AiFillHeart className='mx-1'/> : <AiOutlineHeart className='mx-2'/>}
             </button>
-            <FaRegComment className='mx-2'/>
-            <PiShareFatThin className='mx-2'/>
+              {/* comment */}
+            <button onClick={()=>setCommentOpen(!openComment)} className=''>
+              <FaRegComment className='mx-2'/>
+            </button>
+              {/* share */}
+            <button>
+              <PiShareFatThin className='mx-2'/>
+            </button>
+            
           </div>
           <button className="post__footerIcons__save " onClick={()=>setBookmark(!bookmark)}>
             {bookmark ? <BsBookmarksFill/> : <BsBookmarks className='mx-1 hover:cursor-pointer'/>}
@@ -66,8 +76,8 @@ function Post({likes, body, timestamp, user, postImage, profilePic, userId}) {
         </div>
       </div>
 
-    
-
+      {/* comments */}
+      {openComment && <Comments/>}
     </div>
   )
 }

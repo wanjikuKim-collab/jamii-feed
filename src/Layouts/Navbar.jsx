@@ -30,9 +30,9 @@ function Navbar() {
     <div className={`flex flex-col duration-300 ${open? "w-52" : "w-20"} sticky top-0`}>
         <BsArrowLeftShort className={`font-bold text-blue text-3xl rounded-full absolute -right-3 top-9 border border-blue cursor-pointer ${!open && 'rotate-180'}`}
         onClick={()=> setOpen(!open)}/>
-        <h1 className='logo pl-3 py-4 font-extrabold text-3xl'>Jamii Feed</h1>
+        <h1 className='logo pl-3 mt-3 py-4 font-extrabold text-3xl'>Jamii <span className='logo text-orange-700'>Feed</span></h1>
 
-        <div className={`flex items-center mt-6 px-4 py-2 rounded-md bg-slate-500`}>
+        <div className={`flex items-center mt-6 px-4 py-2 rounded-md `}>
             <BsSearch className={` text-lg block float-left cursor-pointer`}/>
             <input type={'search'} placeholder='Search' className={` ${!open && 'hidden'} duration-300 text-base bg-transparent w-full text-white focus:outline-none ml-2`}/>
         </div>
