@@ -1,15 +1,17 @@
 import React from 'react'
+import Feed from '../Components/Feed'
 import Navbar from '../Layouts/Navbar'
 
 function Home() {
   return (
-    <section>
-        <nav className='flex flex-row'>
+    <div className='home flex  bg-black text-white'>
+        <nav className='home__nav'>
             <Navbar/>
         </nav>
-        <div></div>
-        <div></div>
-    </section>
+        <section className='home__timeline w-full'>
+          <Feed/>
+        </section>
+    </div>
   )
 }
 
