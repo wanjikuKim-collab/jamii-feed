@@ -5,3 +5,7 @@
 html{
   scroll-behavior: smooth;
 }
+
+.signup__title{
+  font-family: 'Bodoni Moda', serif;
+}
